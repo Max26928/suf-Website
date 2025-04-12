@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUF - Politische Partei</title>
+  <meta name="description" content="Die politische Partei SUF steht für Deutschlands Zukunft. Mitglieder, Parteiprogramm und Unterstützungsangebote entdecken.">
+  <meta name="keywords" content="SUF, Partei, Deutschland, Politik, Programm, Mitglied, Spende, Bildung, Migration, Wirtschaft">
+  <meta name="author" content="SUF - Deutschlands Zukunft">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="SUF - Politische Partei für Deutschlands Zukunft">
+  <meta property="og:description" content="Erfahre mehr über Mitglieder, Parteiprogramm und Unterstützungsmöglichkeiten.">
+  <meta property="og:image" content="https://demokratie-geschichte.de/wp-content/uploads/2020/08/1920px-Reichstag_building_Berlin_view_from_west_before_sunset.jpg">
+  <meta property="og:url" content="https://www.deine-domain.de">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://demokratie-geschichte.de/wp-content/uploads/2020/08/1920px-Reichstag_building_Berlin_view_from_west_before_sunset.jpg');
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #000000, #d01c1c, #ffcc00);
+      color: #f8f4f4;
+      padding: 20px;
+      text-align: center;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+      margin: 20px;
+      background-color: #d5d5e2;
+      border-radius: 8px;
+    }
+    button {
+      padding: 12px 30px;
+      margin: 10px;
+      background-color: #d01c1c;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #000000;
+    }
+    footer {
+      background: linear-gradient(to right, #000000, #d01c1c, #ffcc00);
+      color: #0e0d0d;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Deutschlands Zukunft SUF</h1>
+  <nav>
+    <ul>
+      <li><a href="#mitglieder">Mitglieder drücke M</a></li>
+      <li><a href="#programm">Parteiprogramm drücke P</a></li>
+      <li><a href="#unterstuetzung">Unterstützungsmöglichkeiten drücke U</a></li>
+      <li><a href="#Quiz">Quiz drücke u + Q</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="mitglieder" class="hidden">
+  <h2>Mitglieder</h2>
+  <ul>
+    <h4>Wirtschafts Minister: Max Lichtenheldt</h4>
+    <h4>Minister für innere Sicherheit: Toni Paul Eberhard</h4>
+    <h4>Bildungs Minister: Julius Krämer</h4>
+  </ul>
+</section>
+
+<section id="programm" class="hidden">
+  <h2>Parteiprogramm</h2>
+  <h3>Unser Programm umfasst die folgenden Kernpunkte:</h3>
+  <ul>
+    <h4>Austritt aus der EU</h4>
+    <li>- nationale Währung (gedeckelt)</li>
+    <li>- trotzdem Zusammenarbeit mit europäischen Nachbarn</li>
+
+    <h4>Kontrollierte Migration</h4>
+    <li>- Grenzsicherung</li>
+    <li>- vereinfachte Eingliederung in den Arbeitsmarkt</li>
+
+    <h4>Reform des Bildungssystems</h4>
+    <li>- Abschaffung des Bullemielernens</li>
+    <li>- verstärkter Einsatz von KI</li>
+
+    <h4>Kapitalistische Wirtschaftspolitik</h4>
+    <li>- unternehmensfreundliche Politik</li>
+    <li>- Ausbau erneuerbarer Energien mit Grundsicherung durch konventionelle Energieformen</li>
+  </ul>
+</section>
+
+<section id="unterstuetzung" class="hidden">
+  <h2>Hilf uns Deutschland voran zu bringen</h2>
+  <button id="spendenButton">Jetzt Spenden</button>
+  <button id="mitgliedButton">Mitglied werden</button>
+  <div><button id="QuizeButton" class="hidden">Quiz starten</button></div>
+  <div><button id="specialButton" class="hidden">Easter Egg</button></div>
+</section>
+
+<footer>
+  <p>&copy; 2025 SUF - Politische Partei</p>
+</footer>
+
+<script>
+  let punkte = 0;
+
+  document.getElementById("spendenButton").addEventListener("click", function() {
+    alert("Vielen Dank für Ihre Spende! Wir buchen automatisch eine Summe in angemessener Höhe von Ihrem Konto ab.");
+  });
+
+  document.getElementById("mitgliedButton").addEventListener("click", function() {
+    alert("Kontaktieren Sie uns gerne über Suf@gmail.com");
+  });
+
+  document.getElementById("QuizeButton").addEventListener("click", function() {
+    let antwort = prompt("Frage 1 von 6: Welches Lernsystem sollte abgeschafft werden?");
+    if (antwort == "Bulimie Lernen") {
+      punkte++;
+      alert("Richtig! Du hast 1 Punkt erhalten.");
+    } else {
+      alert("Leider falsch. Die richtige Antwort ist: Bulimie Lernen");
+    }
+
+    let antwort1 = prompt("Frage 2 von 6: Welches Wirtschaftssystem wird angestrebt?");
+    if (antwort1 == "ein kapitalistisches") {
+      punkte++;
+      alert("Richtig! Du hast 1 Punkt erhalten");
+    } else {
+      alert("Leider falsch. Die richtige Antwort ist: ein kapitalistisches");
+    }
+
+    let antwort2 = prompt("Frage 3 von 6: Soll eine nationale Währung eingeführt werden?");
+    if (antwort2 == "Ja") {
+      punkte++;
+      alert("Richtig! Du hast 1 Punkt erhalten");
+    } else {
+      alert("Leider falsch. Die richtige Antwort ist: Ja");
+    }
+
+    let antwort3 = prompt("Frage 4 von 6: Was sollte die nationale Währung sein?");
+    if (antwort3 == "gedeckelt") {
+      punkte++;
+      alert("Richtig! Du hast 1 Punkt erhalten");
+    } else {
+      alert("Leider falsch. Die richtige Antwort ist: gedeckelt");
+    }
+
+    let antwort4 = prompt("Frage 5 von 6: Sollen erneuerbare Energien ausgebaut werden?");
+    if (antwort4 == "Ja") {
+      punkte++;
+      alert("Richtig! Du hast 1 Punkt erhalten");
+    } else {
+      alert("Leider falsch. Die richtige Antwort ist: Ja");
+    }
+
+    let antwort5 = prompt("Frage 6 von 6: Soll trotz EU-Austritt weiterhin mit anderen Europäischen Ländern zusammengearbeitet werden?");
+    if (antwort5 == "Ja") {
+      punkte++;
+      alert("Richtig! Du hast 1 Punkt erhalten");
+    } else {
+      alert("Leider falsch. Die richtige Antwort ist: Ja");
+    }
+
+    alert("Du hast " + punkte + " von 6 Punkten erhalten.");
+    if (punkte === 6) {
+      alert("Perfekt! Du hast alles richtig beantwortet. Versuche es doch mal mit dem Button 'Mitglied werden'.");
+    } else if (punkte === 4.5) {
+      alert("Gut gemacht! Du hast fast alles richtig.");
+    } else if (punkte === 0) {
+      alert("Schau mal in die Console");
+    } else {
+      alert("Schau dir das Parteiprogramm besser nochmal an!");
+    }
+  });
+
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'q') {
+      document.getElementById('QuizeButton').classList.remove('hidden');
+    }
+    if (event.key === 'p') {
+      document.getElementById('programm').classList.remove('hidden');
+    }
+    if (event.key === 'm') {
+      document.getElementById('mitglieder').classList.remove('hidden');
+    }
+    if (event.key === 'u') {
+      document.getElementById('unterstuetzung').classList.remove('hidden');
+    }
+    if (event.key === 'S') {
+      document.getElementById('specialButton').classList.remove('hidden');
+    }
+  });
+
+  document.getElementById("specialButton").addEventListener("click", function() {
+    window.open("https://i.ytimg.com/vi/9rlSdKYc_7o/maxresdefault.jpg");
+  });
+
+  console.log("Versuche es mal mit u + shift + s");
+</script>
+
+</body>
+</html>
