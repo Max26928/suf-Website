@@ -223,24 +223,32 @@
       alert("Schau dir das Parteiprogramm besser nochmal an!");
     }
   });
-
- 
-     document.getElementById("Quize").addEventListener("click", function() {
-      document.getElementById('QuizeButton').classList.remove('hidden');
-    });
-    document.getElementById("Parteiprogramm").addEventListener("click", function() {
-      document.getElementById('programm').classList.remove('hidden');
-    });
-    document.getElementById("Mitglieder").addEventListener("click", function() {
-      document.getElementById('mitglieder').classList.remove('hidden');
-    });
-     document.getElementById("Unterstützung").addEventListener("click", function() {
-      document.getElementById('unterstuetzung').classList.remove('hidden');
-    });
-    if (event.key === 'S') {
-      document.getElementById('specialButton').classList.remove('hidden');
+  document.querySelectorAll('.nav-btn').forEach(button => {
+  button.addEventListener('click', function(event) {
+    // Überprüfe, welcher Button geklickt wurde
+    switch (event.target.innerText) {
+      case 'Mitglieder':
+        document.getElementById('mitglieder').classList.remove('hidden');
+        break;
+      case 'Parteiprogramm':
+        document.getElementById('programm').classList.remove('hidden');
+        break;
+      case 'Unterstützung':
+        document.getElementById('unterstuetzung').classList.remove('hidden');
+        break;
+      case 'Quiz':
+        document.getElementById('QuizeButton').classList.remove('hidden');
+        break;
     }
- 
+  });
+});
+
+ document.addEventListener('keydown', function(event) {
+  if (event.key === 'S') {
+    document.getElementById('specialButton').classList.remove('hidden');
+  }
+});
+
   document.getElementById("specialButton").addEventListener("click", function() {
     window.open("https://i.ytimg.com/vi/9rlSdKYc_7o/maxresdefault.jpg");
   });
